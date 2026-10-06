@@ -1,29 +1,29 @@
-# Calm Nature Timer
+# 고요한 자연 타이머
 
-A simple browser-based countdown timer with a calm natural background, 1-minute step controls, and a cheerful completion sound.
+차분한 자연 영상 배경과 1분 단위 시간 조절, 타이머 완료 알림음을 제공하는 브라우저용 카운트다운 타이머입니다.
 
-## Features
+## 주요 기능
 
-- 1-minute adjustment up to 30 minutes
-- Quick presets for 3, 5, and 10 minutes
-- Quiet visual countdown with a peaceful nature background
-- Optional completion chime at the end
-- Works as a static HTML/CSS/JavaScript page
+- 최대 30분까지 1분 단위로 시간 조절
+- 3분, 5분, 10분 빠른 선택
+- 자연 영상 배경과 함께하는 차분한 카운트다운
+- 타이머 완료 알림음 켜기 및 끄기
+- HTML, CSS, JavaScript로 구성된 정적 웹 페이지
 
-## Run locally
+## 로컬에서 실행하기
 
-Open `index.html` directly in a browser, or serve the folder with a local web server:
+브라우저에서 `index.html` 파일을 직접 열거나, 다음 명령으로 폴더를 로컬 웹 서버에 제공할 수 있습니다.
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+그런 다음 브라우저에서 `http://localhost:8000`에 접속합니다.
 
-## Deploy to GitHub Pages
+## GitHub Pages에 배포하기
 
-1. Push this repository to GitHub.
-2. Open the repository settings.
-3. Go to Pages.
-4. Set Source to `Deploy from a branch`.
-5. Choose the `main` branch and `/root` folder.
+1. 저장소를 GitHub에 푸시합니다.
+2. 저장소의 설정(Settings)을 엽니다.
+3. Pages 메뉴로 이동합니다.
+4. Source에서 `Deploy from a branch`를 선택합니다.
+5. `main` 브랜치와 루트 폴더(`/`)를 선택합니다.
