@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calm Nature Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-overlay"></div>
+
+    <main class="timer-card" aria-live="polite">
+      <div class="top-row">
+        <span class="badge">Nature Timer</span>
+        <label class="sound-toggle" for="soundToggle">
+          <input id="soundToggle" type="checkbox" checked />
+          <span>종료 알림</span>
+        </label>
+      </div>
+
+      <h1>집중 타이머</h1>
+
+      <div class="display-wrap">
+        <div id="timeDisplay" class="time-display">05:00</div>
+      </div>
+
+      <div class="preset-row" aria-label="빠른 선택">
+        <button class="preset-btn" data-minutes="3" type="button">3분</button>
+        <button class="preset-btn active" data-minutes="5" type="button">5분</button>
+        <button class="preset-btn" data-minutes="10" type="button">10분</button>
+      </div>
+
+      <div class="adjust-row" aria-label="시간 조절">
+        <button id="decreaseBtn" type="button" class="circle-btn" aria-label="1분 감소">−</button>
+        <div class="value-box">
+          <span class="label">현재 시간</span>
+          <strong id="minuteValue">5분</strong>
+        </div>
+        <button id="increaseBtn" type="button" class="circle-btn" aria-label="1분 증가">＋</button>
+      </div>
+
+      <div class="action-row">
+        <button id="startBtn" type="button" class="primary-btn">시작</button>
+        <button id="pauseBtn" type="button" class="secondary-btn">일시정지</button>
+        <button id="resetBtn" type="button" class="secondary-btn">초기화</button>
+      </div>
+
+      <p id="statusText" class="status-text">대기 중</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
