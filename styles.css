@@ -26,11 +26,19 @@ html, body {
 body {
   display: grid;
   place-items: center;
-  background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80");
-  background-size: cover;
-  background-position: center;
   position: relative;
   overflow: hidden;
+  background: #0f1720;
+}
+
+.background-video {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(1.18) contrast(1.05) saturate(1.08);
+  z-index: 0;
 }
 
 .background-overlay {
@@ -38,10 +46,11 @@ body {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(13, 22, 26, 0.4),
-    rgba(7, 12, 18, 0.65)
+    rgba(10, 18, 25, 0.12),
+    rgba(7, 12, 18, 0.48)
   );
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(2px);
+  z-index: 1;
 }
 
 .timer-card {
